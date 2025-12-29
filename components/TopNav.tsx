@@ -29,7 +29,7 @@ export default function TopNav() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 transition-transform duration-200 hover:scale-105 active:scale-95">
-            <div className="h-[48px] w-[200px] relative shrink-0">
+            <div className="h-[48px] w-[140px] md:w-[200px] relative shrink-0">
               <Image
                 src="/images/copymakerLogo.png"
                 alt="카피메이커 로고"

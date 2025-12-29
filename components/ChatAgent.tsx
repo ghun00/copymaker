@@ -431,7 +431,7 @@ export default function ChatAgent({ initialGoal }: ChatAgentProps = {}) {
                 />
                 <div className="w-full h-full relative">
                   <div className="flex gap-2.5 items-start p-4 h-full">
-                    <p className="block font-normal leading-[1.4] grow min-h-px min-w-px relative shrink-0 text-[#9395a6] text-base md:text-[20px] mb-0">
+                    <p className="block font-normal leading-[1.4] grow min-h-px min-w-0 relative shrink text-[#9395a6] text-base md:text-[20px] mb-0 break-words pr-14">
                       어떤 목적으로 문자를 보내시나요? (위에서 선택해주세요)
                     </p>
                     {/* Send Button (disabled) */}
@@ -474,7 +474,7 @@ export default function ChatAgent({ initialGoal }: ChatAgentProps = {}) {
   return (
     <div className="flex flex-col h-screen max-w-4xl mx-auto w-full relative">
       {/* 채팅 영역 (스크롤 가능) */}
-      <div className="flex-1 overflow-y-auto px-4 md:px-12 pt-6 pb-24">
+      <div className="flex-1 overflow-y-auto px-4 md:px-12 pt-6 pb-40 md:pb-24">
         {messages.map((message) => {
           if (message.type === 'loading') {
             return (
