@@ -318,7 +318,7 @@ export default function ChatAgent({ initialGoal }: ChatAgentProps = {}) {
         {
           id: (Date.now() + 1).toString(),
           role: 'assistant',
-          content: '✨문자 내용을 구성하고 있어요',
+          content: '문자 내용을 구성하고 있어요',
           type: 'loading',
         },
       ])

@@ -71,21 +71,13 @@ export default function Home() {
               />
               <div className="w-full h-full relative">
                 <div className="flex gap-2.5 items-start p-4 h-full">
-                  <a
-                    href="https://youtu.be/sXRK3KKyKhw?si=WaK__wiaGLAsFHT9"
-                    className="block font-normal leading-[1.4] grow min-h-px min-w-0 relative shrink text-[#9395a6] text-base md:text-[20px] break-words"
-                  >
-                    <p className="cursor-pointer mb-0 break-words">
-                      어떤 목적으로 문자를 보내시나요? (위에서 선택해주세요)
-                    </p>
-                  </a>
-                  {/* Send Button */}
-                  <button
-                    className="absolute bg-[#e4e6f0] flex items-center justify-center p-2 rounded-[99px] top-[72px] right-4 w-8 h-8 transition-all duration-200 hover:bg-[#ff5c00] hover:scale-110 active:scale-95 shadow-sm hover:shadow-md"
-                    aria-label="전송"
-                  >
+                  <p className="block font-normal leading-[1.4] grow min-h-px min-w-0 relative shrink text-[#9395a6] text-base md:text-[20px] mb-0 break-words pr-14">
+                    어떤 목적으로 문자를 보내시나요? (위에서 선택해주세요)
+                  </p>
+                  {/* Send Button (disabled) */}
+                  <div className="absolute bg-gray-200 flex items-center justify-center p-2 rounded-[99px] top-[72px] right-4 w-8 h-8 opacity-50 pointer-events-none">
                     <svg
-                      className="block w-4 h-4 transition-transform duration-200"
+                      className="block w-4 h-4"
                       fill="none"
                       viewBox="0 0 16 16"
                       xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +99,7 @@ export default function Home() {
                         />
                       </g>
                     </svg>
-                  </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -155,6 +147,47 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-gray-50 mt-20 md:mt-32">
+        <div className="max-w-[1440px] mx-auto px-4 md:px-[276px] py-8 md:py-12">
+          <div className="flex flex-col gap-4">
+            {/* Copyright */}
+            <p className="text-sm md:text-base font-semibold text-gray-900">
+              Copyright © Friday Lab. All Rights Reserved.
+            </p>
+            
+            {/* Business Info */}
+            <div className="flex flex-col gap-2 text-xs md:text-sm text-gray-600">
+              <p>
+                사업자등록번호 : 481-11-03110 | 대표 : 한지훈
+              </p>
+              <p>
+                통신판매업 신고번호 : -
+              </p>
+              <p>
+                서울특별시 강동구
+              </p>
+            </div>
+
+            {/* Links */}
+            <div className="flex gap-4 mt-2">
+              <a 
+                href="#" 
+                className="text-xs md:text-sm text-gray-600 hover:text-gray-900"
+              >
+                서비스 이용약관
+              </a>
+              <a 
+                href="#" 
+                className="text-xs md:text-sm text-gray-600 hover:text-gray-900"
+              >
+                개인정보 처리방침
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   )
 }
