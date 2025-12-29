@@ -73,9 +73,9 @@ export default function Home() {
                 <div className="flex gap-2.5 items-start p-4 h-full">
                   <a
                     href="https://youtu.be/sXRK3KKyKhw?si=WaK__wiaGLAsFHT9"
-                    className="block font-normal leading-[1.4] grow min-h-px min-w-px relative shrink-0 text-[#9395a6] text-base md:text-[20px]"
+                    className="block font-normal leading-[1.4] grow min-h-px min-w-0 relative shrink text-[#9395a6] text-base md:text-[20px] break-words"
                   >
-                    <p className="cursor-pointer mb-0">
+                    <p className="cursor-pointer mb-0 break-words">
                       어떤 목적으로 문자를 보내시나요? (위에서 선택해주세요)
                     </p>
                   </a>
