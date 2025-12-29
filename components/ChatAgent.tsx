@@ -474,7 +474,9 @@ export default function ChatAgent({ initialGoal }: ChatAgentProps = {}) {
   return (
     <div className="flex flex-col h-screen max-w-4xl mx-auto w-full relative">
       {/* 채팅 영역 (스크롤 가능) */}
-      <div className="flex-1 overflow-y-auto px-4 md:px-12 pt-6 pb-40 md:pb-24">
+      <div className={`flex-1 overflow-y-auto px-4 md:px-12 pt-6 ${
+        step === 4 ? 'pb-[280px] md:pb-24' : 'pb-40 md:pb-24'
+      }`}>
         {messages.map((message) => {
           if (message.type === 'loading') {
             return (

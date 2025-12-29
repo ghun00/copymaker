@@ -53,7 +53,7 @@ export default function TopNav() {
                   className={`text-[20px] leading-[1.4] transition-all duration-200 no-underline ${
                     isActive(item.href)
                       ? 'text-[#ff5c00] font-bold'
-                      : 'text-[#626474] font-normal hover:text-[#ff5c00] hover:scale-105'
+                      : 'text-[#626474] font-medium hover:text-[#ff5c00] hover:scale-105'
                   }`}
                   aria-label={item.label}
                 >
@@ -67,7 +67,7 @@ export default function TopNav() {
           <div className="flex items-center gap-4">
             <Link
               href="/login"
-              className="hidden md:flex flex-col items-center justify-center bg-[#ff5c00] px-6 py-3 rounded-[12px] transition-all duration-200 hover:bg-[#E54D00] hover:scale-105 active:scale-95 shadow-sm hover:shadow-md"
+              className="hidden md:flex flex-col items-center justify-center bg-[#ff5c00] px-6 py-2 rounded-[12px] transition-all duration-200 hover:bg-[#E54D00] hover:scale-105 active:scale-95 shadow-sm hover:shadow-md"
               aria-label="로그인"
             >
               <span className="text-[20px] leading-[1.4] text-white font-normal">
