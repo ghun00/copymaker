@@ -36,12 +36,14 @@ export default function ResultsCards({ results, onSave, onRetry }: ResultsCardsP
             {/* 헤더 */}
             <div className="flex items-center justify-between px-5 pt-5 pb-4 border-b border-gray-100">
               <div className="flex items-center gap-2">
-                <div className="w-5 h-5 relative">
+                <div className="w-5 h-5 relative shrink-0">
                   <Image
                     src="/logoSymbol.png"
                     alt="Logo"
                     fill
                     className="object-contain"
+                    sizes="20px"
+                    unoptimized
                   />
                 </div>
                 <span className="text-sm font-medium text-gray-600">
