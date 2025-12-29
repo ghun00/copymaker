@@ -25,7 +25,7 @@ export default function TopNav() {
 
   return (
     <nav className="sticky top-0 z-50 bg-white">
-      <div className="max-w-[1440px] mx-auto px-4 md:px-20 py-6">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-20 py-2 md:py-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 transition-transform duration-200 hover:scale-105 active:scale-95">
@@ -103,17 +103,17 @@ export default function TopNav() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 py-4 mt-4">
+          <div className="md:hidden border-b border-gray-200 py-4 mt-4">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`text-[20px] leading-[1.4] px-2 py-1 transition-all duration-200 ${
+                  className={`text-[16px] leading-[1.4] px-2 py-2 transition-all duration-200 ${
                     isActive(item.href)
                       ? 'text-[#ff5c00] font-bold'
-                      : 'text-[#626474] font-normal hover:text-[#ff5c00]'
+                      : 'text-[#626474] font-medium hover:text-[#ff5c00]'
                   }`}
                   aria-label={item.label}
                 >
@@ -126,7 +126,7 @@ export default function TopNav() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 aria-label="로그인"
               >
-                <span className="text-[20px] leading-[1.4]">로그인</span>
+                <span className="text-[16px] leading-[1.4]">로그인</span>
               </Link>
             </div>
           </div>

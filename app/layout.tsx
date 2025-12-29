@@ -3,8 +3,11 @@ import './globals.css'
 import TopNav from '@/components/TopNav'
 
 export const metadata: Metadata = {
-  title: '카피메이커',
-  description: '전환율 높은 광고 문자 내용을 정말 쉽게 만들어보세요',
+  title: '카피메이커 | 전환율 높은 문자 내용을 간편하게 만들어보세요',
+  description: '클릭과 반응을 만드는 문자 광고, 아직도 직접 고민하시나요? 카피메이커가 전환율 높은 문자 카피를 빠르게 만들어드려요!',
+  icons: {
+    icon: '/logoSymbol.png',
+  },
 }
 
 export default function RootLayout({
